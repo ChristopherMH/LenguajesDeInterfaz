@@ -2,7 +2,7 @@
             .MODEL small
             .STACK
             .DATA
-mensaje     DB "Hola, mundo!$" ;el signo $ indica hasta d?nde es el fin del mensaje, si no se coloca imprime algo muy raro
+mensaje     DB "Hola, mundo!$" ;el signo $ indica hasta donde es el fin del mensaje, si no se coloca imprime algo muy raro
             .CODE
 inicio      proc            ;iniciar proceso con proc
             .STARTUP
