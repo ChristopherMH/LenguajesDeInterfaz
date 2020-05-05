@@ -37,7 +37,7 @@ parimpar    proc
                         
             test numero, 1
             
-            jz par ;va a la parte del codigo si es par
+            jp par ;va a la parte del codigo si es par
             jnp impar; va a la parte del codigo si es impar
             
             ;si el numero es par...
