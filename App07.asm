@@ -1,4 +1,4 @@
-;Programa que muestre en pantalla los n?meros del 1 al 10.
+;Programa que muestre en pantalla los numeros del 1 al 10.
             .model small
             .stack
             .data
@@ -9,7 +9,7 @@ numero      db  1
             .code
 main        proc
             .startup
-            ;mensaje del titutlo del programa
+            ;mensaje del titulo del programa
             mov ah, 09h
             lea dx, titulo
             int 21h
@@ -25,9 +25,19 @@ main        proc
                 int 21h 
                 
                 ;Imprime el n?mero a seguir del ciclo
-                mov dl, numero
-                add dl, 48
-                mov ah, 2
+                ;imprimir primer digito
+                mov al, numero
+                AAM
+                mov bx, ax
+                mov ah, 02h
+                mov dl, bh
+                add dl, 30h
+                int 21h
+                
+                ;imprimir segundo digito
+                mov ah, 02h
+                mov dl, bl
+                add dl, 30h
                 int 21h
                 
                 ;a la variable de numero se le suma 1 cada vez que el ciclo termina
