@@ -40,7 +40,7 @@ main        proc
                 add dl, 30h
                 int 21h
                 
-                ;a la variable de numero se le suma 1 cada vez que el ciclo termina
+                ;a la variable de numero se le suma 1
                 add numero, 1
             loop ciclo;se llama al ciclo
             
