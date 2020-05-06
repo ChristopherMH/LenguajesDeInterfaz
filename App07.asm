@@ -24,7 +24,7 @@ main        proc
                 lea dx, espacio
                 int 21h 
                 
-                ;Imprime el n?mero a seguir del ciclo
+                ;Imprime el numero a seguir del ciclo
                 ;imprimir primer digito
                 mov al, numero
                 AAM
@@ -41,7 +41,7 @@ main        proc
                 int 21h
                 
                 ;a la variable de numero se le suma 1
-                add numero, 1
+                inc numero
             loop ciclo;se llama al ciclo
             
             ;imprime el mensaje de que el ciclo ha terminado.
